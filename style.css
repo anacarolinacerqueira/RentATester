@@ -1,0 +1,247 @@
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #ffb38c;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+main {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+form {
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+label, input, textarea, button {
+    display: block;
+    margin-bottom: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #444;
+}
+
+/* Estilização para os serviços */
+.servico {
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.servico h3 {
+    font-size: 24px;
+}
+
+.servico p {
+    font-size: 16px;
+}
+
+#formulario-contato {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: left;
+    width: 50%; /* Ocupa 50% da largura da página */
+    margin: 0 auto; /* Centraliza o formulário na página */
+}
+
+#formulario-contato label {
+    display: inline-block; /* Permite que os rótulos fiquem na mesma linha */
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: left;
+    width: 45%; /* Define a largura dos rótulos */
+}
+
+#formulario-contato input[type="text"],
+#formulario-contato input[type="email"],
+#formulario-contato select,
+#formulario-contato textarea,
+#formulario-contato input[type="number"],
+#formulario-contato input[type="radio"],
+#formulario-contato input[type="text"] {
+    width: 50%; /* Define a largura dos campos de entrada */
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: left;
+}
+
+#formulario-contato label[for="outros-especificar"] {
+    display: inline-block;
+    text-align: left;
+    width: 45%; /* Define a largura do rótulo "Especificar" */
+}
+
+#formulario-contato input[type="radio"] + label[for="outros"] {
+    display: inline-block;
+    text-align: left;
+    width: auto; /* Ajusta a largura dos rótulos dos radios */
+}
+
+#formulario-contato input[type="radio"]:checked + label[for="outros"] + input[type="text"] {
+    display: inline-block;
+    margin-top: 5px;
+    text-align: left;
+    width: 45%; /* Define a largura do campo "Especificar" */
+}
+
+#formulario-contato button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    display: block; /* Faz o botão ocupar toda a largura disponível */
+    margin: 10px 0; /* Adiciona um espaço abaixo do botão */
+}
+
+#formulario-contato button:hover {
+    background-color: #555;
+}
+
+/* pagina de erro */
+
+#error-page {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.robot-image img {
+    max-width: 60%;
+    margin-top: 20%;
+    margin-bottom: 20%;
+}
+
+.error-message h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.error-message p {
+    font-size: 16px;
+}
+
+/* Estilos adicionais para o robô */
+.robot-image img {
+    border-radius: 10%;
+}
+
+/* Estilos adicionais para o erro */
+#error-page {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Estilização do título h1 */
+.error-message h1 {
+    color: #ff6347; /* Cor de destaque */
+}

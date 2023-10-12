@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes Humanos - Meu Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>BuyATest - Testes Humanos</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html#inicio">Início</a></li>
+                <li><a href="index.html#sobre">Sobre</a></li>
+                <li><a href="index.html#servicos">Serviços</a></li>
+                <li><a href="index.html#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="servico1">
+            <h2>Testes Humanos - BuyATest</h2>
+
+            <p>
+                Na BuyATest, compreendemos a importância crítica da qualidade de seu produto. É por isso que oferecemos um serviço de Testes Humanos altamente especializado e personalizado para garantir que seu produto atenda aos mais altos padrões de qualidade e satisfação do cliente.
+            </p>
+
+            <p>
+                Nossos testadores humanos são profissionais qualificados, dedicados a verificar cada aspecto do seu produto, desde funcionalidades essenciais até a experiência do usuário. Com anos de experiência em testes e uma compreensão profunda das expectativas do cliente, nossos especialistas são seus parceiros confiáveis na busca pela excelência.
+            </p>
+
+            <h3>O que oferecemos:</h3>
+
+            <ul>
+                <li><strong>Testes Abrangentes:</strong> Nossos testadores realizam testes abrangentes para identificar qualquer falha ou imperfeição, garantindo que seu produto funcione de forma confiável em todas as situações.</li>
+                <li><strong>Testes de Usabilidade:</strong> Avaliamos a experiência do usuário para garantir que seu produto seja intuitivo e agradável de usar, aumentando a satisfação do cliente.</li>
+                <li><strong>Testes de Compatibilidade:</strong> Verificamos a compatibilidade do seu produto em várias plataformas, dispositivos e navegadores para garantir que ele atenda a um público diversificado.</li>
+                <li><strong>Feedback Detalhado:</strong> Fornecemos feedback detalhado e relatórios abrangentes, permitindo que você tome medidas informadas para melhorar a qualidade do seu produto.</li>
+                <li><strong>Personalização:</strong> Adaptamos nossos serviços às suas necessidades específicas, garantindo que atendamos às suas expectativas e requisitos exclusivos.</li>
+            </ul>
+
+            <p>
+                Na BuyATest, acreditamos que a qualidade é a base do sucesso. Nossa equipe de testadores humanos está comprometida em garantir que seu produto seja impecável e capaz de superar as expectativas do mercado. Deixe-nos ajudá-lo a alcançar o sucesso e a excelência em qualidade.
+            </p>
+
+            <p>
+                Entre em contato conosco hoje para saber como nossos Testes Humanos podem elevar o seu produto a um novo patamar de qualidade e satisfação do cliente. Sua busca pela excelência começa aqui na BuyATest.
+            </p>
+        </section>
+
+        <section id="formulario-contato">
+            <h2>Entre em contato!</h2>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+        
+                <label for="telefone-ddd">Telefone e DDD:</label>
+                <input type="text" id="telefone-ddd" name="telefone-ddd" required>
+        
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="estado">Estado:</label>
+<select id="estado" name="estado">
+    <option value="na">-- selecione</option>
+    <option value="ac">Acre</option>
+    <option value="al">Alagoas</option>
+    <option value="ap">Amapá</option>
+    <option value="am">Amazonas</option>
+    <option value="ba">Bahia</option>
+    <option value="ce">Ceará</option>
+    <option value="df">Distrito Federal</option>
+    <option value="es">Espírito Santo</option>
+    <option value="go">Goiás</option>
+    <option value="ma">Maranhão</option>
+    <option value="mt">Mato Grosso</option>
+    <option value="ms">Mato Grosso do Sul</option>
+    <option value="mg">Minas Gerais</option>
+    <option value="pa">Pará</option>
+    <option value="pb">Paraíba</option>
+    <option value="pr">Paraná</option>
+    <option value="pe">Pernambuco</option>
+    <option value="pi">Piauí</option>
+    <option value="rj">Rio de Janeiro</option>
+    <option value="rn">Rio Grande do Norte</option>
+    <option value="rs">Rio Grande do Sul</option>
+    <option value="ro">Rondônia</option>
+    <option value="rr">Roraima</option>
+    <option value="sc">Santa Catarina</option>
+    <option value="sp">São Paulo</option>
+    <option value="se">Sergipe</option>
+    <option value="to">Tocantins</option>
+</select>
+
+        
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade" name="cidade" required>
+        
+                <label>Tipo de Sistema:</label>
+                <label for="web">Web</label>
+                <input type="radio" id="web" name="tipo-sistema" value="web" required>
+                <label for="mobile">Mobile</label>
+                <input type="radio" id="mobile" name="tipo-sistema" value="mobile">
+                <label for="desktop">Desktop</label>
+                <input type="radio" id="desktop" name="tipo-sistema" value="desktop">
+                <label for="outros">Outros</label>
+                <input type="radio" id="outros" name="tipo-sistema" value="outros">
+                <input type="text" id="outros-especificar" name="outros-especificar" placeholder="Especificar">
+        
+                <label for="quantidade-testadores">Quantidade de Testadores:</label>
+                <input type="number" id="quantidade-testadores" name="quantidade-testadores" required>
+                
+                <label for="descricao-servico">Descrição do Serviço:</label>
+                <textarea id="descricao-servico" name="descricao-servico" rows="5" required></textarea>
+        
+                <button type="submit">Enviar</button>
+            </form>
+        </section>        
+        
+    </main>
+    <footer>
+        <p>&copy; 2023 BuyATest</p>
+    </footer>
+</body>
+</html>
