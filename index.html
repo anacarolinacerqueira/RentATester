@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BuyATest</title>
+    <title>RentATester</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
-        <h1>BuyATest</h1>
+        <h1><img src="rent.png" alt="logo do RentATester"></h1>
         <nav>
             <ul>
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#inicio">Sobre Nós</a></li>
                 <li><a href="#servicos">Serviços</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
@@ -20,46 +20,41 @@
     </header>
     <main>
         <section id="inicio">
-            <h2>Início</h2>
-            <p>Bem-vindo ao meu site!</p>
-        </section>
-        <section id="sobre">
-            <h2>Sobre</h2>
-            <p>Esta é uma seção sobre mim.</p>
+            <h2>Sobre Nós</h2>
+            <p>Na RentATester, entendemos a importância crítica da qualidade do software para o sucesso de seu projeto. Nós somos uma empresa dedicada a fornecer serviços de teste de software de primeira classe para atender a diversas necessidades e desafios. Com nossa abordagem abrangente, oferecemos três categorias principais de serviços de teste para garantir que seu software seja seguro, confiável e de alto desempenho</p>
         </section>
         <section id="servicos">
             <h2>Serviços</h2>
             <div class="servico">
-                <h3><a href="servico1.html">Testes Humanos</a></h3>
-                <p>Descrição do Serviço 1.</p>
+                <h3><a href="testeshumanos.html">Testes Humanos</a></h3>
+                <p>Nossa equipe de especialistas em testes humanos é apaixonada por encontrar e relatar defeitos em seu software. Eles reproduzem cenários do mundo real para identificar problemas que podem passar despercebidos em testes automatizados. Nosso foco na usabilidade e na experiência do usuário garante que seu software atenda às expectativas de seus clientes.</p>
             </div>
             <div class="servico">
                 <h3><a href="servico2.html">Testes de Multidão</a></h3>
-                <p>Descrição do Serviço 2.</p>
+                <p>A sabedoria das multidões é uma ferramenta poderosa. Com nossos serviços de testes de multidão, reunimos um grupo diversificado de testadores para avaliar seu software a partir de várias perspectivas. Isso ajuda a identificar problemas em uma ampla variedade de dispositivos, sistemas operacionais e configurações, garantindo que seu software funcione perfeitamente para todos os seus usuários.</p>
             </div>
             <div class="servico">
-                <h3><a href="servico3.html">Testes assistidos por IA</a></h3>
-                <p>Descrição do Serviço 3.</p>
+                <h3><a href="testes-ia.html">Testes assistidos por IA</a></h3>
+                <p>A inteligência artificial está revolucionando o mundo do teste de software. Nossos serviços de testes assistidos por IA utilizam algoritmos avançados para automatizar tarefas repetitivas e identificar problemas de maneira eficiente. Isso economiza tempo e recursos, permitindo que você lance seu software mais rapidamente sem comprometer a qualidade.</p>
             </div>
         </section>
         
-        
         <section id="contato">
-            <h2>Contato</h2>
-            <p>Você pode entrar em contato conosco através do formulário abaixo:</p>
-            <form>
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem"></textarea>
+            <h2>Fale conosco</h2>
+            
+            <form id="formulario-contato" onsubmit="return validarForm()">
+                <label for="nome">Nome*</label>
+                <input type="text" id="nome-contato" name="nome" required>
+                <label for="email">E-mail*</label>
+                <input type="email" id="email-contato" name="email" required>
+                <label for="mensagem">Mensagem*</label>
+                <textarea id="mensagem-contato" name="mensagem" required></textarea>
                 <button type="submit">Enviar</button>
             </form>
         </section>
     </main>
     <footer>
-        <p>&copy; 2023 Meu Site</p>
+        <p>&copy; 2023 - RentATester</p>
     </footer>
 </body>
 </html>

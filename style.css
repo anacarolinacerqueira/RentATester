@@ -3,6 +3,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 /* Estilos gerais */
@@ -15,6 +17,22 @@ body {
     padding: 0;
 }
 
+#arrow{
+    float: left;
+    width: 10%;
+}
+
+#arrow img{
+    width: 60%;
+}
+
+#arrow p{
+    padding-left: 15%;
+    margin-top: -10%;
+    color: #2b2928;
+    font-weight: bold;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -22,7 +40,7 @@ body {
 }
 
 header {
-    background-color: #ffb38c;
+    background-color: #fff6f0;
     color: #fff;
     padding: 50px 0;
     text-align: center;
@@ -43,8 +61,13 @@ nav ul li {
 }
 
 nav a {
-    text-decoration: none;
-    color: #fff;
+    color: #7d7875;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color:#2b2928;;
+    text-decoration: underline;
 }
 
 main {
@@ -95,7 +118,7 @@ input, textarea {
 }
 
 button {
-    background-color: #333;
+    background-color: #7d7875;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -104,7 +127,7 @@ button {
 }
 
 button:hover {
-    background-color: #555;
+    color: #eaf0e4;
 }
 
 footer {
@@ -132,10 +155,33 @@ footer {
     font-size: 16px;
 }
 
+#contato h2{
+    text-align: center;
+    padding: 1%;
+}
+
+#formulario-contato label {
+    display: inline-block; /* Permite que os rótulos fiquem na mesma linha */
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: center; /* Centraliza o texto */
+    width: 45%; /* Define a largura dos rótulos */
+}
+
+#formulario-contato input[type="text"],
+#formulario-contato input[type="email"],
+#formulario-contato select,
+#formulario-contato textarea {
+    display: inline-block; /* Permite que os campos fiquem na mesma linha */
+    margin-top: 10px;
+    width: 45%; /* Define a largura dos campos */
+    text-align: center; /* Centraliza o texto */
+}
+
 #formulario-contato {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border: 1px solid #ddd;
+    background-color: #eaf0e4;
+    padding: 2%;
+    border: none;
     border-radius: 5px;
     margin-top: 20px;
     text-align: left;
@@ -186,6 +232,7 @@ footer {
 }
 
 #formulario-contato button {
+    width: 20%;
     background-color: #333;
     color: #fff;
     padding: 10px 20px;
@@ -194,11 +241,88 @@ footer {
     cursor: pointer;
     text-align: center;
     display: block; /* Faz o botão ocupar toda a largura disponível */
-    margin: 10px 0; /* Adiciona um espaço abaixo do botão */
+    margin: 3% auto; /* Adiciona um espaço abaixo do botão */
+    border: 2px solid transparent;
 }
 
 #formulario-contato button:hover {
-    background-color: #555;
+    background-color: #859e86;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+
+#formulario-humanos {
+    background-color: #eaf0e4;
+    padding: 2%;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: left;
+    width: 50%; /* Ocupa 50% da largura da página */
+    margin: 0 auto; /* Centraliza o formulário na página */
+}
+
+#formulario-humanos label {
+    display: inline-block; /* Permite que os rótulos fiquem na mesma linha */
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: left;
+    width: 45%; /* Define a largura dos rótulos */
+}
+
+#formulario-humanos input[type="text"],
+#formulario-humanos input[type="email"],
+#formulario-humanos select,
+#formulario-humanos textarea,
+#formulario-humanos input[type="number"],
+#formulario-humanos input[type="radio"],
+#formulario-humanos input[type="text"] {
+    width: 50%; /* Define a largura dos campos de entrada */
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: left;
+}
+
+#formulario-humanos label[for="outros-especificar"] {
+    display: inline-block;
+    text-align: left;
+    width: 45%; /* Define a largura do rótulo "Especificar" */
+}
+
+#formulario-humanos input[type="radio"] + label[for="outros"] {
+    display: inline-block;
+    text-align: left;
+    width: auto; /* Ajusta a largura dos rótulos dos radios */
+}
+
+#formulario-humanos input[type="radio"]:checked + label[for="outros"] + input[type="text"] {
+    display: inline-block;
+    margin-top: 5px;
+    text-align: left;
+    width: 45%; /* Define a largura do campo "Especificar" */
+}
+
+#formulario-humanos button {
+    width: 20%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    display: block; /* Faz o botão ocupar toda a largura disponível */
+    margin: 3% auto; /* Adiciona um espaço abaixo do botão */
+    border: 2px solid transparent;
+}
+
+#formulario-humanos button:hover {
+    background-color: #859e86;
+    color: #fff;
+    border: 2px solid #fff;
 }
 
 /* pagina de erro */
