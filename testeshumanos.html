@@ -43,20 +43,20 @@
             </p>
         </section>
 
-        <section id="formulario-humanos" data-cy="teste">
+        <section id="formulario-humanos" data-cy="form-humanos">
             <h2>Entre em contato!</h2>
             <form>
                 <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" data-cy="teste" required>
+                <input type="text" id="nome" name="nome" data-cy="name-humanos" required>
         
                 <label for="telefone-ddd">Telefone e DDD:</label>
-                <input type="text" id="telefone-ddd" name="telefone-ddd" data-cy="teste" required>
+                <input type="text" id="telefone-ddd" name="telefone-ddd" data-cy="phone-humanos" required>
         
                 <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" data-cy="teste" required>
+                <input type="email" id="email" name="email" data-cy="email-humanos" required>
         
                 <label for="estado">Estado:</label>
-<select id="estado" name="estado" data-cy="teste">
+<select id="estado" name="estado" data-cy="state">
     <option value="na">-- selecione</option>
     <option value="ac">Acre</option>
     <option value="al">Alagoas</option>
@@ -89,32 +89,32 @@
 
         
                 <label for="cidade">Cidade:</label>
-                <input type="text" id="cidade" name="cidade" data-cy="teste" required>
+                <input type="text" id="cidade" name="cidade" data-cy="city" required>
         
                 <label>Tipo de Sistema:</label>
                 <label for="web">Web</label>
-                <input type="radio" id="web" name="tipo-sistema" value="web" data-cy="teste" required>
+                <input type="radio" id="web" name="tipo-sistema" value="web" data-cy="system" required>
                 <label for="mobile">Mobile</label>
-                <input type="radio" id="mobile" name="tipo-sistema" data-cy="teste" value="mobile">
+                <input type="radio" id="mobile" name="tipo-sistema" data-cy="system" value="mobile">
                 <label for="desktop">Desktop</label>
-                <input type="radio" id="desktop" name="tipo-sistema" data-cy="teste" value="desktop">
+                <input type="radio" id="desktop" name="tipo-sistema" data-cy="system" value="desktop">
                 <label for="outros">Outros</label>
-                <input type="radio" id="outros" name="tipo-sistema" data-cy="teste" value="outros">
+                <input type="radio" id="outros" name="tipo-sistema" data-cy="system" value="outros">
                 <input type="text" id="outros-especificar" name="outros-especificar" placeholder="Especificar">
         
                 <label for="quantidade-testadores">Quantidade de Testadores:</label>
-                <input type="number" id="quantidade-testadores" name="quantidade-testadores" data-cy="teste" required>
+                <input type="number" id="quantidade-testadores" name="quantidade-testadores" data-cy="size" required>
                 
                 <label for="descricao-servico">Descrição do Serviço:</label>
-                <textarea id="descricao-servico" name="descricao-servico" rows="5" data-cy="teste" required></textarea>
+                <textarea id="descricao-servico" name="descricao-servico" rows="5" data-cy="description" required></textarea>
         
-                <button type="submit">Enviar</button>
+                <button type="submit" data-cy="send-humanos">Enviar</button>
             </form>
         </section>        
         
     </main>
     <footer>
-        <p>&copy; 2023 RentATester</p>
+        <p>&copy; 2024 RentATester</p>
     </footer>
 </body>
 </html>
