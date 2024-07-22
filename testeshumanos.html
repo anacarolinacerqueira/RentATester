@@ -14,7 +14,7 @@
     </header>
     <main>
         <section id="servico1">
-            <h2>Testes Humanos - RentATester</h2>
+            <h2 data-cy="teste">Testes Humanos - RentATester</h2>
 
             <p>
                 Na RentATester, compreendemos a importância crítica da qualidade de seu produto. É por isso que oferecemos um serviço de Testes Humanos altamente especializado e personalizado para garantir que seu produto atenda aos mais altos padrões de qualidade e satisfação do cliente.
@@ -43,20 +43,20 @@
             </p>
         </section>
 
-        <section id="formulario-humanos">
+        <section id="formulario-humanos" data-cy="teste">
             <h2>Entre em contato!</h2>
             <form>
                 <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
+                <input type="text" id="nome" name="nome" data-cy="teste" required>
         
                 <label for="telefone-ddd">Telefone e DDD:</label>
-                <input type="text" id="telefone-ddd" name="telefone-ddd" required>
+                <input type="text" id="telefone-ddd" name="telefone-ddd" data-cy="teste" required>
         
                 <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" data-cy="teste" required>
         
                 <label for="estado">Estado:</label>
-<select id="estado" name="estado">
+<select id="estado" name="estado" data-cy="teste">
     <option value="na">-- selecione</option>
     <option value="ac">Acre</option>
     <option value="al">Alagoas</option>
@@ -89,24 +89,24 @@
 
         
                 <label for="cidade">Cidade:</label>
-                <input type="text" id="cidade" name="cidade" required>
+                <input type="text" id="cidade" name="cidade" data-cy="teste" required>
         
                 <label>Tipo de Sistema:</label>
                 <label for="web">Web</label>
-                <input type="radio" id="web" name="tipo-sistema" value="web" required>
+                <input type="radio" id="web" name="tipo-sistema" value="web" data-cy="teste" required>
                 <label for="mobile">Mobile</label>
-                <input type="radio" id="mobile" name="tipo-sistema" value="mobile">
+                <input type="radio" id="mobile" name="tipo-sistema" data-cy="teste" value="mobile">
                 <label for="desktop">Desktop</label>
-                <input type="radio" id="desktop" name="tipo-sistema" value="desktop">
+                <input type="radio" id="desktop" name="tipo-sistema" data-cy="teste" value="desktop">
                 <label for="outros">Outros</label>
-                <input type="radio" id="outros" name="tipo-sistema" value="outros">
+                <input type="radio" id="outros" name="tipo-sistema" data-cy="teste" value="outros">
                 <input type="text" id="outros-especificar" name="outros-especificar" placeholder="Especificar">
         
                 <label for="quantidade-testadores">Quantidade de Testadores:</label>
-                <input type="number" id="quantidade-testadores" name="quantidade-testadores" required>
+                <input type="number" id="quantidade-testadores" name="quantidade-testadores" data-cy="teste" required>
                 
                 <label for="descricao-servico">Descrição do Serviço:</label>
-                <textarea id="descricao-servico" name="descricao-servico" rows="5" required></textarea>
+                <textarea id="descricao-servico" name="descricao-servico" rows="5" data-cy="teste" required></textarea>
         
                 <button type="submit">Enviar</button>
             </form>
