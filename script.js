@@ -10,7 +10,7 @@ function validarLogin() {
     const loginInput = document.getElementById('login').value.trim();
     const senhaInput = document.getElementById('senha').value.trim();
     const form = document.querySelector('form[data-cy="form-login"]');
-    const mensagemErro = document.createElement('p');
+    const mensagemErro = document.getElementById('mensagemErro');
     mensagemErro.style.color = 'red';
     mensagemErro.style.fontSize = '12px'
 
