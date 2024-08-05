@@ -26,11 +26,7 @@ function validarLogin() {
         window.Location.href = 'index.html';
         return;
     }
-
     
     const existingError = form.querySelector('p');
-    if (existingError) {
-        form.removeChild(existingError);
-    }
     form.appendChild(mensagemErro);
 }
