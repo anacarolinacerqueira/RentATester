@@ -9,17 +9,17 @@
 
 #body-login {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #ffffff;
     text-align: center;
-    margin-top: 50px;
 }
 
 .container {
-    width: 300px;
-    margin: 0 auto;
+    float: left;
+    width: 20%;
+    margin-top: 50%;
     background-color: #fff;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 5%;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
@@ -407,4 +407,17 @@ footer {
 /* Estilização do título h1 */
 .error-message h1 {
     color: #ff6347; /* Cor de destaque */
+}
+
+#img-login{
+    float: left;
+    width: 40%;
+    height: auto;
+    margin-top: 15%;
+    margin-left: 5%;
+}
+
+#img-login img{
+    width: 75%;
+    border-radius: 30%;
 }

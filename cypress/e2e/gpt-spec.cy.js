@@ -10,7 +10,7 @@ describe('Testes de Login', () => {
 
   it('Deve exibir mensagem de erro ao tentar logar sem preencher o login', () => {
     cy.get('[data-cy=password]').type('tcc');
-    cy.wait(1000)
+    cy.wait(1000);
     cy.get('[data-cy=sign-in]').click();
     cy.get('form[data-cy=form-login] p').should('contain', 'É preciso informar o login');
   });
