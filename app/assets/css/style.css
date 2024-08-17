@@ -6,6 +6,12 @@
     font-family:'Montserrat', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
+/* estilização da tela de login*/
+
 #body-login {
     background-color: #fffcf7;
 }
@@ -43,6 +49,11 @@
     border-radius: 5%;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     background-color: #ffffff;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 .container label{
@@ -92,72 +103,68 @@ input[type="submit"]:hover {
     font-weight: bold;
 }
 
+/* Estilização do alerta de confirmação apresentado ao fazer login*/
+
+.alerta {
+    padding: 1%;
+    background-color: #32db7383;
+    color: rgb(90, 89, 89);
+    text-align: center;
+  }
+  
+  .fechar-alerta {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    float: right;
+    padding: 1%;
+    font-size: 35px;
+    line-height: 20px;
+    cursor: pointer;
+  }
+  
+  .fechar-alerta:hover {
+    color: rgb(155, 0, 0);
+  }
+
 /* Estilos gerais */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fffcf7;
     color: #333;
     line-height: 1.6;
     margin: 0;
     padding: 0;
 }
 
-#arrow{
-    float: left;
-    width: 10%;
-}
-
-#arrow img{
-    width: 60%;
-}
-
-#arrow p{
-    padding-left: 15%;
-    margin-top: -10%;
-    color: #2b2928;
-    font-weight: bold;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
 header {
-    background-color: #fff6f0;
-    color: #fff;
-    padding: 50px 0;
-    text-align: center;
+    background-color: #fff;
 }
 
-header h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
+header img{
+    margin-left: 40%;
+    padding: 3%;
 }
 
-nav ul {
-    list-style: none;
+#texto-sobre{
+    background-color: #ffe1b9;
+    padding-bottom: 5%;
+    padding-top: 5%;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
+header p {
+    width: 60%;
+    margin-left: 20%;
+    font-size: 100%;
+    text-align: justify;
 }
 
-nav a {
-    color: #7d7875;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color:#2b2928;;
-    text-decoration: underline;
+#img-home{
+    width: 100%;
+    height: auto;
 }
 
 main {
-    background-color: #fff;
-    padding: 20px;
+    padding: 5%;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }

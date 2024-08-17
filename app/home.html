@@ -3,26 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <title>RentATester</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="scripts/script.js"></script>
+    <script src="scripts/login.js"></script>
 </head>
 <body>
+    <div class="alerta">
+        <span class="fechar-alerta" onclick="this.parentElement.style.display='none';">&times;</span> 
+        <strong>Você fez login!</strong><br> Agora é possível conhecer nossos serviços e fazer um orçamento.
+    </div>
     <header>
-        <h1><img src="assets/img/rent.png" alt="logo do RentATester"></h1>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Sobre Nós</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+        <img src="assets/img/rent.png" alt="logo do RentATester">
+        <div id="texto-sobre"><p>
+            Na Rent A Tester, somos especialistas em garantir a qualidade do seu software. Oferecemos uma gama completa de serviços, desde testes humanos e testes de multidão até testes assistidos por IA, adaptados às necessidades do seu projeto. Nossa expertise abrange diversas plataformas, como web, mobile e desktop, sempre com o compromisso de entregar resultados precisos e confiáveis. Atendemos a clientes de diferentes segmentos de mercado, sempre com a flexibilidade de serviços personalizados para melhor atender às suas demandas. Descubra como podemos ajudar a elevar a qualidade do seu software e solicite um orçamento diretamente em nosso site!
+        </p></div>
     </header>
+    <img src="assets/img/home-people.jpg" id="img-home">
+
     <main>
-        <section id="inicio">
-            <h2>Sobre Nós</h2>
-            <p>Na RentATester, entendemos a importância crítica da qualidade do software para o sucesso de seu projeto. Nós somos uma empresa dedicada a fornecer serviços de teste de software de primeira classe para atender a diversas necessidades e desafios. Com nossa abordagem abrangente, oferecemos três categorias principais de serviços de teste para garantir que seu software seja seguro, confiável e de alto desempenho</p>
-        </section>
         <section id="servicos">
             <h2>Serviços</h2>
             <div class="servico">

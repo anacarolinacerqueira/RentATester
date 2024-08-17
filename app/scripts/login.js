@@ -16,13 +16,13 @@ function validarLogin() {
     mensagemErro.style.marginLeft = "23%"
 
     if (loginInput === '' && senhaInput === '') {
-        mensagemErro.textContent = 'É preciso informar o usuário e a senha.';
+        mensagemErro.textContent = 'É preciso informar o usuário e a senha';
     } else if (loginInput === '') {
-        mensagemErro.textContent = 'É preciso informar o usuário.';
+        mensagemErro.textContent = 'É preciso informar o usuário';
     } else if (senhaInput === '') {
-        mensagemErro.textContent = 'É preciso informar a senha.';
+        mensagemErro.textContent = 'É preciso informar a senha';
     } else if (loginInput !== 'teste' || senhaInput !== 'tcc') {
-        mensagemErro.textContent = 'Usuário ou senha incorretos. Por favor, verifique suas credenciais.';
+        mensagemErro.textContent = 'Usuário ou senha incorretos. Por favor, verifique suas credenciais!';
     } else {
         window.location.assign('home.html');
         return;
