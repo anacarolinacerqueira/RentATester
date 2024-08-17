@@ -1,60 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RentATester</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="scripts/script.js"></script>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent A Tester - Login</title>
+    <script src="scripts/script.js" defer></script>
 </head>
-<body>
-    <header>
-        <h1><img src="assets/img/rent.png" alt="logo do RentATester"></h1>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Sobre Nós</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="inicio">
-            <h2>Sobre Nós</h2>
-            <p>Na RentATester, entendemos a importância crítica da qualidade do software para o sucesso de seu projeto. Nós somos uma empresa dedicada a fornecer serviços de teste de software de primeira classe para atender a diversas necessidades e desafios. Com nossa abordagem abrangente, oferecemos três categorias principais de serviços de teste para garantir que seu software seja seguro, confiável e de alto desempenho</p>
-        </section>
-        <section id="servicos">
-            <h2>Serviços</h2>
-            <div class="servico">
-                <h3><a href="testeshumanos.html">Testes Humanos</a></h3>
-                <p>Nossa equipe de especialistas em testes humanos é apaixonada por encontrar e relatar defeitos em seu software. Eles reproduzem cenários do mundo real para identificar problemas que podem passar despercebidos em testes automatizados. Nosso foco na usabilidade e na experiência do usuário garante que seu software atenda às expectativas de seus clientes.</p>
-            </div>
-            <div class="servico">
-                <h3><a href="servico2.html">Testes de Multidão</a></h3>
-                <p>A sabedoria das multidões é uma ferramenta poderosa. Com nossos serviços de testes de multidão, reunimos um grupo diversificado de testadores para avaliar seu software a partir de várias perspectivas. Isso ajuda a identificar problemas em uma ampla variedade de dispositivos, sistemas operacionais e configurações, garantindo que seu software funcione perfeitamente para todos os seus usuários.</p>
-            </div>
-            <div class="servico">
-                <h3><a href="testes-ia.html">Testes assistidos por IA</a></h3>
-                <p>A inteligência artificial está revolucionando o mundo do teste de software. Nossos serviços de testes assistidos por IA utilizam algoritmos avançados para automatizar tarefas repetitivas e identificar problemas de maneira eficiente. Isso economiza tempo e recursos, permitindo que você lance seu software mais rapidamente sem comprometer a qualidade.</p>
-            </div>
-        </section>
-        
-        <section id="contato">
-            <h2>Fale conosco</h2>
-            
-            <form id="formulario-contato" onsubmit="return validarForm()">
-                <label for="nome">Nome*</label>
-                <input type="text" id="nome-contato" name="nome" data-cy="nome-contato" required>
-                <label for="email">E-mail*</label>
-                <input type="email" id="email-contato" name="email" data-cy="email-contato" required>
-                <label for="mensagem">Mensagem*</label>
-                <textarea id="mensagem-contato" name="mensagem" data-cy="mensagem-contato" required></textarea>
-                <button type="submit" data-cy="botao-enviar">Enviar</button>
-            </form>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 - RentATester</p>
-    </footer>
+<body id="body-login">
+    <div id="img-login">
+        <img src="assets/img/img-login.png" alt="a">
+    </div>
+    <div id="login-side">
+        <div id="titulo-site"><img src="assets/img/rent.png"></div>
+        <form class="container" onsubmit="return false">
+            <label for="login">usuário</label>
+            <input type="text" id="login" name="login" placeholder="informe seu usuário"><br>
+            <label for="senha" data-cy="title-pass">senha</label>
+            <input type="password" id="senha" name="senha" placeholder="informe sua senha"><br><br>
+            <input type="submit" value="Entrar">
+            <p id="mensagemErro"></p>
+        </form>
+        <div id="criarConta"><a href="testeshumanos.html">Criar conta</a></div>
+    </div>
 </body>
 </html>
