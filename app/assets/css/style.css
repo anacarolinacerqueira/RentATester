@@ -164,26 +164,41 @@ header p {
 }
 
 main {
-    padding: 5%;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 0%;
 }
 
-section {
-    margin-bottom: 20px;
-    padding: 20px;
-    border: 1px solid #ddd;
-    background-color: #f9f9f9;
-    border-radius: 5px;
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 2%;
+    height: 30em;
+}
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
+#servicos {
+    margin-bottom: 1%;
+    padding: 0%;
+    background-color: #ffffff;
+}
 h2 {
-    font-size: 24px;
+    font-size: 2.2em;
+    padding: 2.5%;
+    font-weight: bolder;
+    text-align: center;
 }
 
-ul {
-    list-style: disc;
-    margin-left: 20px;
+.row p{
+    font-size: 1.1em;
+    font-weight: 500;
+    text-align: justify;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 3%
 }
 
 form {
@@ -194,27 +209,12 @@ form {
     border-radius: 5px;
 }
 
-label, input, textarea, button {
-    display: block;
-    margin-bottom: 10px;
-}
-
-label {
-    font-weight: bold;
-}
-
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-}
-
 button {
     background-color: #7d7875;
     color: #fff;
-    padding: 10px 20px;
+    padding: 10%;
     border: none;
-    border-radius: 5px;
+    border-radius: 5%;
     cursor: pointer;
 }
 
@@ -223,11 +223,10 @@ button:hover {
 }
 
 footer {
-    background-color: #333;
+    background-color: #5e5d5d;
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    border-top: 1px solid #444;
 }
 
 /* Estilização para os serviços */
@@ -252,97 +251,34 @@ footer {
     padding: 1%;
 }
 
-#formulario-contato label {
-    display: inline-block; /* Permite que os rótulos fiquem na mesma linha */
-    margin-top: 10px;
-    font-weight: bold;
-    text-align: center; /* Centraliza o texto */
-    width: 45%; /* Define a largura dos rótulos */
+#cta-orcamento{
+    text-align: center;
+    margin: 3%;
+    font-size: 1.3em;
 }
 
-#formulario-contato input[type="text"],
-#formulario-contato input[type="email"],
-#formulario-contato select,
-#formulario-contato textarea {
-    display: inline-block; /* Permite que os campos fiquem na mesma linha */
-    margin-top: 10px;
-    width: 45%; /* Define a largura dos campos */
-    text-align: center; /* Centraliza o texto */
-}
-
-#formulario-contato {
-    background-color: #eaf0e4;
-    padding: 2%;
-    border: none;
-    border-radius: 5px;
-    margin-top: 20px;
-    text-align: left;
-    width: 50%; /* Ocupa 50% da largura da página */
-    margin: 0 auto; /* Centraliza o formulário na página */
-}
-
-#formulario-contato label {
-    display: inline-block; /* Permite que os rótulos fiquem na mesma linha */
-    margin-top: 10px;
-    font-weight: bold;
-    text-align: left;
-    width: 45%; /* Define a largura dos rótulos */
-}
-
-#formulario-contato input[type="text"],
-#formulario-contato input[type="email"],
-#formulario-contato select,
-#formulario-contato textarea,
-#formulario-contato input[type="number"],
-#formulario-contato input[type="radio"],
-#formulario-contato input[type="text"] {
-    width: 50%; /* Define a largura dos campos de entrada */
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    text-align: left;
-}
-
-#formulario-contato label[for="outros-especificar"] {
-    display: inline-block;
-    text-align: left;
-    width: 45%; /* Define a largura do rótulo "Especificar" */
-}
-
-#formulario-contato input[type="radio"] + label[for="outros"] {
-    display: inline-block;
-    text-align: left;
-    width: auto; /* Ajusta a largura dos rótulos dos radios */
-}
-
-#formulario-contato input[type="radio"]:checked + label[for="outros"] + input[type="text"] {
-    display: inline-block;
-    margin-top: 5px;
-    text-align: left;
-    width: 45%; /* Define a largura do campo "Especificar" */
-}
-
-#formulario-contato button {
-    width: 20%;
-    background-color: #333;
+#orcamento {
+    width: 30%;
+    background-color: #859e86;
     color: #fff;
-    padding: 10px 20px;
+    font-weight: bolder;
+    font-size: 1.2em;
+    padding: 1.5%;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     text-align: center;
-    display: block; /* Faz o botão ocupar toda a largura disponível */
-    margin: 3% auto; /* Adiciona um espaço abaixo do botão */
-    border: 2px solid transparent;
+    display: block;
+    margin: 3% auto;
+    border: 3px solid transparent;
 }
 
-#formulario-contato button:hover {
-    background-color: #859e86;
-    color: #fff;
-    border: 2px solid #fff;
+#orcamento:hover {
+    background-color: #619263;
+    border: 3px solid #8f8f8f;
 }
 
+/* PÁGINA TESTES HUMANOS - VER O QUE DÁ PRA APROVEITAR PARA O CADASTRO*/
 
 #formulario-humanos {
     background-color: #eaf0e4;
@@ -417,7 +353,7 @@ footer {
     border: 2px solid #fff;
 }
 
-/* pagina de erro */
+/* REMOVER DEPOIS */
 
 #error-page {
     background-color: #fff;

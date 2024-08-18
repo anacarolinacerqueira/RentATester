@@ -28,3 +28,7 @@ function validarLogin() {
         return;
     }
 }
+
+function rotaOrcamento(){
+    window.location.assign('orcamento.html')
+}

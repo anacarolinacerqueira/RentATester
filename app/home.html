@@ -25,37 +25,27 @@
 
     <main>
         <section id="servicos">
-            <h2>Serviços</h2>
-            <div class="servico">
-                <h3><a href="testeshumanos.html">Testes Humanos</a></h3>
-                <p>Nossa equipe de especialistas em testes humanos é apaixonada por encontrar e relatar defeitos em seu software. Eles reproduzem cenários do mundo real para identificar problemas que podem passar despercebidos em testes automatizados. Nosso foco na usabilidade e na experiência do usuário garante que seu software atenda às expectativas de seus clientes.</p>
-            </div>
-            <div class="servico">
-                <h3><a href="servico2.html">Testes de Multidão</a></h3>
-                <p>A sabedoria das multidões é uma ferramenta poderosa. Com nossos serviços de testes de multidão, reunimos um grupo diversificado de testadores para avaliar seu software a partir de várias perspectivas. Isso ajuda a identificar problemas em uma ampla variedade de dispositivos, sistemas operacionais e configurações, garantindo que seu software funcione perfeitamente para todos os seus usuários.</p>
-            </div>
-            <div class="servico">
-                <h3><a href="testes-ia.html">Testes assistidos por IA</a></h3>
-                <p>A inteligência artificial está revolucionando o mundo do teste de software. Nossos serviços de testes assistidos por IA utilizam algoritmos avançados para automatizar tarefas repetitivas e identificar problemas de maneira eficiente. Isso economiza tempo e recursos, permitindo que você lance seu software mais rapidamente sem comprometer a qualidade.</p>
-            </div>
+            <div class="row">
+                <div class="column" style="background-color:#fa9d60;">
+                  <h2>TESTES HUMANOS</h2>
+                  <p>Nossa equipe de especialistas em testes humanos é apaixonada por encontrar e relatar defeitos em seu software. Eles reproduzem cenários do mundo real para identificar problemas que podem passar despercebidos em testes automatizados. Nosso foco na usabilidade e na experiência do usuário garante que seu software atenda às expectativas de seus clientes.</p>
+                </div>
+                <div class="column" style="background-color:#fcb281;">
+                  <h2>TESTES DE MULTIDÃO</h2>
+                  <p>A sabedoria das multidões é uma ferramenta poderosa. Com nossos serviços de testes de multidão, reunimos um grupo diversificado de testadores para avaliar seu software a partir de várias perspectivas. Isso ajuda a identificar problemas em uma ampla variedade de dispositivos, sistemas operacionais e configurações, garantindo que seu software funcione perfeitamente para todos os seus usuários.</p>
+                </div>
+                <div class="column" style="background-color:#ffdcc5;">
+                  <h2>TESTES ASSISTIDOS POR IA</h2>
+                  <p>A inteligência artificial está revolucionando o mundo do teste de software. Nossos serviços de testes assistidos por IA utilizam algoritmos avançados para automatizar tarefas repetitivas e identificar problemas de maneira eficiente. Isso economiza tempo e recursos, permitindo que você lance seu software mais rapidamente sem comprometer a qualidade.</p>
+                </div>
+              </div>
         </section>
-        
-        <section id="contato">
-            <h2>Fale conosco</h2>
-            
-            <form id="formulario-contato" onsubmit="return validarForm()">
-                <label for="nome">Nome*</label>
-                <input type="text" id="nome-contato" name="nome" data-cy="nome-contato" required>
-                <label for="email">E-mail*</label>
-                <input type="email" id="email-contato" name="email" data-cy="email-contato" required>
-                <label for="mensagem">Mensagem*</label>
-                <textarea id="mensagem-contato" name="mensagem" data-cy="mensagem-contato" required></textarea>
-                <button type="submit" data-cy="botao-enviar">Enviar</button>
-            </form>
-        </section>
+                <p id="cta-orcamento">Se interessou pelos nossos serviços?<br>
+                <strong>Faça um orçamento clicando no botão abaixo, e nos deixe ajudar o seu negócio!</strong></p>
+                <button type="button" id="orcamento" onclick="rotaOrcamento()">FAZER ORÇAMENTO</button>
     </main>
     <footer>
-        <p>&copy; 2024 - RentATester</p>
+        <p>&#127279; 2024 - RentATester</p>
     </footer>
 </body>
 </html>
