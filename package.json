@@ -1,25 +1,5 @@
 {
-  "name": "rentatester",
-  "version": "1.0.0",
-  "description": "Sistema fictício para cotação de serviços de teste de software",
-  "main": "index.js",
-  "scripts": {
-    "test": "cypress open"
-  },
-  "repository": {
-    "type": "git",
-    "url": "rentatester"
-  },
-  "keywords": [
-    "cypress",
-    "test",
-    "automation",
-    "software",
-    "testing"
-  ],
-  "author": "Ana Carolina Cerqueira Ferreira",
-  "license": "ISC",
   "devDependencies": {
-    "cypress": "^13.10.0"
+    "cypress": "^13.13.3"
   }
 }
