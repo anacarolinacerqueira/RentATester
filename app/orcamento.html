@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <title>Solicite um Orçamento - Rent A Tester</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="scripts/orcamento.js"></script>
+</head>
+<body>
+    <header id="header-orcamento">
+        <h1><a href="home.html"><img src="assets/img/rent.png" alt="logo do RentATester" id="logo-orcamento"></a></h1>
+        <h2>ORÇAMENTO</h2>
+    </header>
+    <main id="perguntas">
+        <div class="selecionar-opcao" id="tipos-plataforma">
+            <img src="assets/img/plataforma-img.png">
+            <p>1 - SELECIONE O TIPO DE PLATAFORMA</p>
+            <input type="radio" id="web" name="tipo-sistema" value="web" onclick="validarSelecaoPlataforma()">
+            <label for="web">Web</label><br>
+            
+            <input type="radio" id="mobile" name="tipo-sistema" value="mobile" onclick="validarSelecaoPlataforma()">
+            <label for="mobile">Mobile</label><br>
+            
+            <input type="radio" id="desktop" name="tipo-sistema" value="desktop" onclick="validarSelecaoPlataforma()">
+            <label for="desktop">Desktop</label><br>
+            
+            <div id="msg-plataforma"></div>
+        </div>
+
+        <div class="selecionar-opcao" id="tipos-teste">
+            <img src="assets/img/tipoteste.png">
+            <p>2 - AGORA, SELECIONE O TIPO DE TESTE</p>
+            <input type="radio" id="humanos" name="tipo-teste" value="humanos" onclick="validarSelecaoTipoTeste()">
+            <label for="humanos">Testes Humanos</label><br>
+            
+            <input type="radio" id="multidao" name="tipo-teste" value="multidao" onclick="validarSelecaoTipoTeste()">
+            <label for="multidao">Testes de Multidão</label><br>
+            
+            <input type="radio" id="ia" name="tipo-teste" value="ia" onclick="validarSelecaoTipoTeste()">
+            <label for="ia">Testes Assistidos por IA</label><br>
+
+            <input type="radio" id="personalizado" name="tipo-teste" value="personalizado" onclick="validarSelecaoTipoTeste()">
+            <label for="personalizado">Quero algo diferente!</label><br>
+            
+            <div id="msg-tipoteste"></div>
+        </div>
+
+        <div class="selecionar-opcao" id="perguntasHumanos" onload="gerenciarVisibilidade()">
+            <img src="assets/img/icon-testes.png">
+            <p>3 - QUAL O ESCOPO DOS TESTES HUMANOS?</p>
+            <label for="tempo">Tempo do Projeto (em dias):</label>
+            <input type="number" id="tempo-projeto" name="detalhes-humanos"><br>
+            
+            <label for="quantidade">Quantas Pessoas Testers?</label>
+            <input type="number" id="quantidade-testers" name="detalhes-humanos"><br>
+            
+            <label for="horas">Quantas Horas por dia?</label>
+            <input type="number" id="horas-dia" name="detalhes-humanos"><br>
+            
+            <div id="validacoes-humanos"></div>
+        </div>
+
+        <div id="perguntasHumanos"></div>
+        </main>     
+
+        <div id="componenteContinuar" onclick="validarSelecaoForm(); validacaoItensTestesHumanos()">
+            <div id="msg-continuar"></div>
+            <img src="assets/img/arrow.png" id="seta-continuar">
+            <p>Consultar Orçamento</p>
+        </div>
+
+        </div>
+</body>
+</html>

@@ -1,5 +1,4 @@
 * {
-    margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
@@ -227,6 +226,7 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
+    height: 10%;
 }
 
 /* Estilização para os serviços */
@@ -276,6 +276,124 @@ footer {
 #orcamento:hover {
     background-color: #619263;
     border: 3px solid #8f8f8f;
+}
+
+/* TELA ORÇAMENTO*/
+
+#logo-orcamento{
+    float: left;
+    width: 12%;
+    margin-left: -1%;
+    margin-top: -1%;
+}
+
+#header-orcamento{
+    width: 100%;
+    height: auto;
+    float: left;
+}
+
+#header-orcamento h2{
+    float: left;
+    margin-left: 30%;
+}
+
+.selecionar-opcao{
+    float: left;
+    width: 100%;
+    height: auto;
+    background-color: #efffe8;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    border-bottom: 2px dotted #567a14;
+}
+
+.selecionar-opcao p{
+    margin-left: 38%;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.selecionar-opcao img{
+    float: left;
+    width: 11%;
+    height: auto;
+    margin-top: 3.5%;
+    margin-left: 5%;
+}
+
+.selecionar-opcao input{
+    margin-left: 33%;
+    margin-top: 0.5%;
+    margin-bottom: 1%;
+}
+
+#msg-plataforma{
+    color:rgb(105, 143, 80);
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 40%;
+    padding: 0.5%;
+}
+
+#msg-tipoteste{
+    color:rgb(105, 143, 80);
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 40%;
+    padding: 0.5%;
+}
+
+#msg-continuar{
+    color:rgb(204, 50, 12);
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: -18%;
+    padding: 0.5%;
+}
+
+#validacoes-humanos{
+    color:rgb(204, 50, 12);
+    font-size: 12px;
+    font-weight: bold;
+    float: left;
+    margin-left: 42%;
+    padding: 0.5%;
+}
+
+#componenteContinuar{
+    width: auto;
+    float: left;
+    margin-left: 47%;
+    cursor: pointer;
+}
+
+#componenteContinuar p{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#seta-continuar{
+    width: 5%;
+    margin-left: 10%;
+}
+
+#tipos-teste{
+    display: hidden;
+}
+
+#perguntasHumanos label{
+    float: left;
+    margin-left: 32%;
+}
+
+#perguntasHumanos input{
+    float: right;
+    margin-right: 45%;
+    width: 3%;
+    height: 20px;
 }
 
 /* PÁGINA TESTES HUMANOS - VER O QUE DÁ PRA APROVEITAR PARA O CADASTRO*/
