@@ -1,5 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.querySelector('form[id="form-login"]');
+    
+    form.addEventListener('submit', function(event) {
+        validarLogin();
+    });
 });
 
 function validarLogin() {
