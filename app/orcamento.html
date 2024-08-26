@@ -49,7 +49,7 @@
             <div id="msg-tipoteste"></div>
         </div>
 
-        <div class="selecionar-opcao" id="perguntasHumanos" onload="gerenciarVisibilidade()">
+        <div class="selecionar-opcao" id="perguntasHumanos">
             <img src="assets/img/icon-testes.png">
             <p>3 - QUAL O ESCOPO DOS TESTES HUMANOS?</p>
             <label for="tempo">Tempo do Projeto (em dias):</label>
@@ -65,12 +65,12 @@
         </div>
 
         <div id="perguntasHumanos"></div>
-        </main>     
-
-        <div id="componenteContinuar" onclick="validarSelecaoForm(); validacaoItensTestesHumanos()">
+        </main>
+        <div id="resultado"></div>
+        <div id="componenteContinuar" onclick="validarSelecaoForm(); validacaoItensTestesHumanos(); fazerOrcamento();" >
             <div id="msg-continuar"></div>
             <img src="assets/img/arrow.png" id="seta-continuar">
-            <p>Consultar Orçamento</p>
+            <p id="texto-consultar">Consultar Orçamento</p>
         </div>
 
         </div>

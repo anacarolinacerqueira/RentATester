@@ -396,6 +396,15 @@ footer {
     height: 20px;
 }
 
+#resultado{
+    padding: 0.5%;
+    float: left;
+    margin-left: 47%;
+    height: 30%;
+    font-size: 28px;
+    font-weight: bolder;
+}
+
 /* PÁGINA TESTES HUMANOS - VER O QUE DÁ PRA APROVEITAR PARA O CADASTRO*/
 
 #formulario-humanos {
