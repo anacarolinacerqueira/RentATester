@@ -1,14 +1,6 @@
-import pluginCypress from 'eslint-plugin-cypress/flat'
+import globals from "globals";
+
 export default [
-  pluginCypress.configs.globals,
-  {
-    rules: {
-        "cypress/no-assigning-return-values": "error",
-        "cypress/no-unnecessary-waiting": "error",
-        "cypress/assertion-before-screenshot": "warn",
-        "cypress/no-force": "warn",
-        "cypress/no-async-tests": "error",
-        "cypress/no-async-before": "error",
-        "cypress/no-pause": "error",
-    },
-}];
+  {files: ["**/*.js"], languageOptions: {sourceType: "script"}},
+  {languageOptions: { globals: globals.browser }},
+];
