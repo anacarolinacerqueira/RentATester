@@ -280,26 +280,16 @@ footer {
     float: left;
     width: 100%;
     height: auto;
-    background-color: #efffe8;
-    margin-bottom: 1%;
-    margin-top: 1%;
-    border-bottom: 2px dotted #567a14;
+    background-color: #fcf2db;
+    border-bottom: 2px dashed #cc7f1b;
 }
 
 .selecionar-opcao p{
-    margin-left: 38%;
     font-size: 1.5em;
     font-weight: bold;
+    text-align: center;
     padding-top: 1%;
-    padding-bottom: 1%;
-}
-
-.selecionar-opcao img{
-    float: left;
-    width: 11%;
-    height: auto;
-    margin-top: 3.5%;
-    margin-left: 5%;
+    padding-bottom: 2%;
 }
 
 .selecionar-opcao input{
@@ -308,20 +298,13 @@ footer {
     margin-bottom: 1%;
 }
 
-#msg-plataforma{
+#msg-plataforma,
+#msg-tipoteste {
     color:rgb(105, 143, 80);
     font-size: 14px;
+    text-align: center;
     font-weight: bold;
-    margin-left: 40%;
-    padding: 0.5%;
-}
-
-#msg-tipoteste{
-    color:rgb(105, 143, 80);
-    font-size: 14px;
-    font-weight: bold;
-    margin-left: 40%;
-    padding: 0.5%;
+    padding: 1%;
 }
 
 #msg-continuar{
@@ -329,10 +312,10 @@ footer {
     font-size: 12px;
     font-weight: bold;
     margin-left: -18%;
-    padding: 0.5%;
+    padding: 1%;
 }
 
-#validacoes-humanos{
+#validacoes-escopo{
     color:rgb(204, 50, 12);
     font-size: 12px;
     font-weight: bold;

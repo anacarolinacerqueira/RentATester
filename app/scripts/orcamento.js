@@ -51,11 +51,7 @@ function validarSelecaoTipoTeste() {
     }
 }
 
-function exibirAlertaPersonalizado(){
-    alert("Para um serviço personalizado, entre em contato pelo nosso telefone: 4002-8922.")
-}
-
-function validacaoItensTestesHumanos(){
+function validacaoEscopoTestes(){
 
     inputTempo = document.getElementById('tempo-projeto').value;
     console.log(inputTempo);
@@ -64,59 +60,62 @@ function validacaoItensTestesHumanos(){
     inputHorasDia = document.getElementById('horas-dia').value;
     console.log(inputHorasDia);
     
-    let msgHumanos = document.getElementById("validacoes-humanos");
+    let msgEscopo = document.getElementById("validacoes-escopo");
 
-    if ((inputTempo == '') || (inputTempo < 2)){
-        msgHumanos.innerHTML
-            = "O tempo mínimo para um projeto de testes humanos é de 2 dias :)";
+    if ((inputTempo == '') || (inputTempo < 5)){
+        msgEscopo.innerHTML
+            = "O tempo mínimo para um projeto de testes humanos é 5 dias.";
             setTimeout(function () {
-                //oculta mensagem de erro após 4 segundos
-                msgHumanos.style.display='none';
+                msgEscopo.style.display='none';
             }, 4000);
     }
 
-    else if ((inputQtdPessoas == '') || (inputQtdPessoas > 10)){
-        msgHumanos.innerHTML
-            = "É necessário selecionar entre 1 e 10 pessoas como testers.";
+    else if ((inputQtdPessoas == '') || (inputQtdPessoas > 10 && inputQtdPessoas < 1)){
+        msgEscopo.innerHTML
+            = "É necessário selecionar entre 1 e 10 testadores.";
             setTimeout(function () {
-                //oculta mensagem de erro após 4 segundos
-                msgHumanos.style.display='none';
+                msgEscopo.style.display='none';
             }, 4000);
     }
 
     else if ((inputHorasDia == '') || (inputHorasDia > 10)){
-        msgHumanos.innerHTML
-            = "O máximo de tempo por dia para testes humanos, é de 10 horas.";
+        msgEscopo.innerHTML
+            = "O máximo de tempo de trabalho por dia é 10 horas.";
             setTimeout(function () {
-                //oculta mensagem de erro após 4 segundos
-                msgHumanos.style.display='none';
+                msgEscopo.style.display='none';
             }, 4000);
     }
     else {
-        fazerOrcamento();
+        return;
     }
 }
 
-function validarSelecaoForm(){
-    if (document.getElementById('personalizado').checked){
-        exibirAlertaPersonalizado();
-        location.reload()
-    }
-    else {
-        /*document.getElementById("msg-continuar").innerHTML
-            = "Você precisa preencher todos os campos para continuar!";
-            setTimeout(function () {
-                //oculta mensagem de erro após 3 segundos
-                document.getElementById('msg-continuar').style.display='none';
-            }, 3000);
-        */
-    }
+function exibirAlertaPersonalizado(){
+    alert("Para um serviço personalizado, entre em contato pelo nosso telefone: 4002-8922.")
 }
 
-function fazerOrcamento(){
+function calcularOrcamento(){
     orcamento = (tipoTeste*(inputQtdPessoas*inputHorasDia*inputTempo))+((tipoTeste*(inputQtdPessoas*inputHorasDia*inputTempo))*tipoPlataforma);
     console.log(orcamento);
     document.getElementById('resultado').innerHTML = orcamento.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
     document.getElementById('seta-continuar').style = 'display:none';
     document.getElementById('texto-consultar').style = 'display:none';
+}
+
+function fazerOrcamento(){
+    validacaoEscopoTestes();
+
+    if (document.getElementById('personalizado').checked){
+        exibirAlertaPersonalizado();
+        location.reload()
+    }
+    else if (tipoTeste == undefined || tipoPlataforma == undefined || inputTempo == '' || inputQtdPessoas == '' || inputHorasDia == ''){
+        document.getElementById("msg-continuar").innerHTML
+            = "Você precisa preencher todos os campos para continuar!";
+            setTimeout(function () {
+                //oculta mensagem de erro após 3 segundos
+                document.getElementById('msg-continuar').style.display='none';
+            }, 3000);
+    } else
+    calcularOrcamento();
 }

@@ -9,6 +9,7 @@
     <title>Solicite um Orçamento - Rent A Tester</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="scripts/orcamento.js"></script>
+    <script src="https://kit.fontawesome.com/9c0f6bfef1.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="header-orcamento">
@@ -17,7 +18,7 @@
     </header>
     <main id="perguntas">
         <div class="selecionar-opcao" id="tipos-plataforma">
-            <img src="assets/img/plataforma-img.png">
+            <i class="fa-solid fa-mobile-screen-button fa-8x" style="color: #d75814; float: left; display: inline; margin-left: 2%; margin-top: 3%; padding:.25em"></i>
             <p>1 - SELECIONE O TIPO DE PLATAFORMA</p>
             <input type="radio" id="web" name="tipo-sistema" value="web" onclick="validarSelecaoPlataforma()">
             <label for="web">Web</label><br>
@@ -32,7 +33,7 @@
         </div>
 
         <div class="selecionar-opcao" id="tipos-teste">
-            <img src="assets/img/tipoteste.png">
+            <i class="fa-solid fa-people-group fa-8x" style="color: #d75814; float: left; display: inline; margin-left: 2%; margin-top: 3%; padding:.25em"></i>
             <p>2 - AGORA, SELECIONE O TIPO DE TESTE</p>
             <input type="radio" id="humanos" name="tipo-teste" value="humanos" onclick="validarSelecaoTipoTeste()">
             <label for="humanos">Testes Humanos</label><br>
@@ -50,24 +51,24 @@
         </div>
 
         <div class="selecionar-opcao" id="perguntasHumanos">
-            <img src="assets/img/icon-testes.png">
+            <i class="fa-solid fa-list-check fa-8x" style="color: #d75814; float: left; display: inline; margin-left: 2%; margin-top: 3%; padding:.25em"></i>
             <p>3 - QUAL É O ESCOPO DO PROJETO TESTES?</p>
             <label for="tempo">Tempo do Projeto (em dias):</label>
             <input type="number" id="tempo-projeto" name="detalhes-humanos"><br>
             
-            <label for="quantidade">Quantas Pessoas Testers?</label>
+            <label for="quantidade">Quantos Testadores?</label>
             <input type="number" id="quantidade-testers" name="detalhes-humanos"><br>
             
             <label for="horas">Quantas Horas por dia?</label>
             <input type="number" id="horas-dia" name="detalhes-humanos"><br>
             
-            <div id="validacoes-humanos"></div>
+            <div id="validacoes-escopo"></div>
         </div>
 
         <div id="perguntasHumanos"></div>
         </main>
         <div id="resultado"></div>
-        <div id="componenteContinuar" onclick="validarSelecaoForm(); validacaoItensTestesHumanos(); fazerOrcamento();" >
+        <div id="componenteContinuar" onclick="fazerOrcamento();" >
             <div id="msg-continuar"></div>
             <img src="assets/img/arrow.png" id="seta-continuar">
             <p id="texto-consultar">Consultar Orçamento</p>
