@@ -293,9 +293,13 @@ footer {
 }
 
 .selecionar-opcao input{
-    margin-left: 33%;
+    margin-left: 28%;
     margin-top: 0.5%;
     margin-bottom: 1%;
+}
+
+input [name="tipo-teste"]{
+   border: none;
 }
 
 #msg-plataforma,
@@ -311,7 +315,7 @@ footer {
     color:rgb(204, 50, 12);
     font-size: 12px;
     font-weight: bold;
-    margin-left: -18%;
+    margin-left: -10%;
     padding: 1%;
 }
 
@@ -334,6 +338,16 @@ footer {
 #componenteContinuar p{
     font-weight: bold;
     font-size: 16px;
+    margin-bottom: 5%;
+}
+
+#novo-orcamento{
+    text-decoration: none;
+}
+
+#novo-orcamento:visited{
+    text-decoration: none;
+    color: #000000;
 }
 
 #seta-continuar{
@@ -345,16 +359,21 @@ footer {
     display: hidden;
 }
 
-#perguntasHumanos label{
+#perguntasEscopo label{
     float: left;
-    margin-left: 32%;
+    margin-left: 30%;
+    height: 25px;
 }
 
-#perguntasHumanos input{
+#perguntasEscopo input{
     float: right;
     margin-right: 45%;
-    width: 3%;
-    height: 20px;
+    width: 5%;
+    height: 35px;
+    border: 1px solid #dbd4cf;
+    font-size: 16px;
+    margin-top: 0%;
+    text-align: center;
 }
 
 #resultado{
@@ -364,7 +383,10 @@ footer {
     height: 30%;
     font-size: 28px;
     font-weight: bolder;
+    color:rgb(105, 143, 80)
 }
+
+/*TELA DE CADASTRO */
 
 #body-cadastro{
     background-color: transparent;

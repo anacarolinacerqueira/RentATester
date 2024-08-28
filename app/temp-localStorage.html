@@ -10,16 +10,11 @@
     <div id="storageData"></div>
 
     <script>
-        // Seleciona o elemento onde os dados serão exibidos
         const storageDataDiv = document.getElementById('storageData');
-
-        // Recupera o array de usuários do localStorage
         const users = JSON.parse(localStorage.getItem('users')) || [];
         
-        // Inicializa uma string para armazenar o conteúdo HTML
         let storageContent = '<ul>';
 
-        // Itera sobre cada usuário e adiciona ao conteúdo HTML
         users.forEach((user, index) => {
             storageContent += `<li><strong>Usuário ${index + 1}</strong>:<ul>`;
             storageContent += `<li><strong>Nome</strong>: ${user.nome}</li>`;
@@ -30,7 +25,6 @@
 
         storageContent += '</ul>';
         
-        // Insere o conteúdo construído na página
         storageDataDiv.innerHTML = storageContent;
     </script>
 </body>

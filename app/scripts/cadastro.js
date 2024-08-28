@@ -2,12 +2,11 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('cadastroForm').addEventListener('submit', function(event) {
         event.preventDefault();
 
-        // Limpa mensagens de erro antes de validar novamente
         document.querySelectorAll('.error-message').forEach(function(element) {
             element.textContent = '';
-            element.style.color = ''; // Reseta o estilo da cor
-            element.style.fontWeight = ''; // Reseta o estilo do negrito
-            element.style.fontSize = ''; // Reseta o tamanho da fonte
+            element.style.color = ''; 
+            element.style.fontWeight = '';
+            element.style.fontSize = '';
         });
 
         let isValid = true;
@@ -19,13 +18,12 @@ document.addEventListener('DOMContentLoaded', function() {
         const senha = document.getElementById('senha').value;
         const repitaSenha = document.getElementById('repitaSenha').value;
 
-        // Função auxiliar para definir a mensagem de erro com estilo
         function setError(elementId, message) {
             const element = document.getElementById(elementId);
             element.textContent = message;
-            element.style.color = 'red'; // Cor da fonte vermelha
-            element.style.fontWeight = 'bold'; // Formatação em negrito
-            element.style.fontSize = '12px'; // Tamanho da fonte 12 pixels
+            element.style.color = 'red'; 
+            element.style.fontWeight = 'bold';
+            element.style.fontSize = '12px';
         }
 
         if (!nome || nome.length < 10) {
@@ -59,20 +57,16 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         if (isValid) {
-            // Recupera os usuários existentes do localStorage
             let users = JSON.parse(localStorage.getItem('users')) || [];
 
-            // Cria um novo objeto de usuário
             let newUser = {
                 nome: nome,
                 email: email,
                 senha: senha
             };
 
-            // Adiciona o novo usuário ao array
             users.push(newUser);
 
-            // Salva o array atualizado no localStorage
             localStorage.setItem('users', JSON.stringify(users));
 
             document.getElementById('successMessage').textContent = 'Cadastro realizado com sucesso!';
