@@ -8,20 +8,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <title>RentATester</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="scripts/login.js"></script>
+    <script src="scripts/home.js"></script>
 </head>
-<body>
-    <div class="alerta">
-        <span class="fechar-alerta" onclick="this.parentElement.style.display='none';">&times;</span> 
-        <strong>Você fez login!</strong><br> Agora é possível conhecer nossos serviços e fazer um orçamento.
-    </div>
+<body onload="alertaLogin()">
+    <div class="alerta"></div>
     <header>
         <a href="home.html"><img src="assets/img/rent.png" alt="logo do RentATester"></a>
         <div id="texto-sobre"><p>
             Na Rent A Tester, somos especialistas em garantir a qualidade do seu software. Oferecemos uma gama completa de serviços, desde testes humanos e testes de multidão até testes assistidos por IA, adaptados às necessidades do seu projeto. Nossa expertise abrange diversas plataformas, como web, mobile e desktop, sempre com o compromisso de entregar resultados precisos e confiáveis. Atendemos a clientes de diferentes segmentos de mercado, sempre com a flexibilidade de serviços personalizados para melhor atender às suas demandas. Descubra como podemos ajudar a elevar a qualidade do seu software e solicite um orçamento diretamente em nosso site!
         </p></div>
     </header>
-    <img src="assets/img/home-people.jpg" id="img-home">
+    <img src="assets/img/woman-developer.jpg" id="img-home">
 
     <main>
         <section id="servicos">
@@ -32,11 +29,11 @@
                 </div>
                 <div class="column" style="background-color:#fcb281;">
                   <h2>TESTES DE MULTIDÃO</h2>
-                  <p>A sabedoria das multidões é uma ferramenta poderosa. Com nossos serviços de testes de multidão, reunimos um grupo diversificado de testadores para avaliar seu software a partir de várias perspectivas. Isso ajuda a identificar problemas em uma ampla variedade de dispositivos, sistemas operacionais e configurações, garantindo que seu software funcione perfeitamente para todos os seus usuários.</p>
+                  <p>A sabedoria das multidões é uma ferramenta poderosa. Com nossos serviços de testes de multidão, reunimos um grupo diversificado de testadores para avaliar seu software a partir de várias perspectivas, dispositivos, sistemas operacionais e configurações, garantindo que seu software funcione perfeitamente para todos os seus usuários.</p>
                 </div>
                 <div class="column" style="background-color:#ffdcc5;">
                   <h2>TESTES ASSISTIDOS POR IA</h2>
-                  <p>A inteligência artificial está revolucionando o mundo do teste de software. Nossos serviços de testes assistidos por IA utilizam algoritmos avançados para automatizar tarefas repetitivas e identificar problemas de maneira eficiente. Isso economiza tempo e recursos, permitindo que você lance seu software mais rapidamente sem comprometer a qualidade.</p>
+                  <p>A inteligência artificial está revolucionando o mundo do teste de software. Nossos serviços de testes assistidos por IA utilizam algoritmos avançados para automatizar tarefas repetitivas e identificar problemas de maneira eficiente, economizando tempo, recursos e permitindo que você lance seu software rapidamente sem comprometer a qualidade.</p>
                 </div>
               </div>
         </section>

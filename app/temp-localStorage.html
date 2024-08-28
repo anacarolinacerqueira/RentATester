@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultar LocalStorage</title>
+</head>
+<body>
+    <h1>Dados Salvos no LocalStorage</h1>
+    <div id="storageData"></div>
+
+    <script>
+        // Seleciona o elemento onde os dados serão exibidos
+        const storageDataDiv = document.getElementById('storageData');
+
+        // Recupera o array de usuários do localStorage
+        const users = JSON.parse(localStorage.getItem('users')) || [];
+        
+        // Inicializa uma string para armazenar o conteúdo HTML
+        let storageContent = '<ul>';
+
+        // Itera sobre cada usuário e adiciona ao conteúdo HTML
+        users.forEach((user, index) => {
+            storageContent += `<li><strong>Usuário ${index + 1}</strong>:<ul>`;
+            storageContent += `<li><strong>Nome</strong>: ${user.nome}</li>`;
+            storageContent += `<li><strong>Email</strong>: ${user.email}</li>`;
+            storageContent += `<li><strong>Senha</strong>: ${user.senha}</li>`;
+            storageContent += `</ul></li>`;
+        });
+
+        storageContent += '</ul>';
+        
+        // Insere o conteúdo construído na página
+        storageDataDiv.innerHTML = storageContent;
+    </script>
+</body>
+</html>

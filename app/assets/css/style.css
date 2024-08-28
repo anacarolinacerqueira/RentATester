@@ -13,6 +13,7 @@ html {
 
 #body-login {
     background-color: #fffcf7;
+    overflow-y: hidden;
 }
 
 #titulo-site{
@@ -26,21 +27,20 @@ html {
 
 #img-login{
     float: left;
-    width: 25%;
+    width: 50%;
     height: auto;
-    margin-top: 15%;
-    margin-left: 15%;
+    margin-top: 0%;
+    margin-left: 0%;
 }
 
 #img-login img{
-    width: 100%;
-    border-radius: 30%;
+    width: 110%;
 }
 
 #login-side{
-    float: left;
-    width: 60%;
-    margin-top: 10%
+    float: right;
+    width: 48%;
+    margin-top: 15%
 }
 
 .container {
@@ -185,14 +185,14 @@ main {
     background-color: #ffffff;
 }
 h2 {
-    font-size: 2.2em;
+    font-size: 2em;
     padding: 2.5%;
     font-weight: bolder;
     text-align: center;
 }
 
 .row p{
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: 500;
     text-align: justify;
     width: 80%;
@@ -227,28 +227,6 @@ footer {
     text-align: center;
     padding: 10px 0;
     height: 10%;
-}
-
-/* Estilização para os serviços */
-.servico {
-    padding: 20px;
-    border: 1px solid #ddd;
-    background-color: #f9f9f9;
-    margin-bottom: 20px;
-    border-radius: 5px;
-}
-
-.servico h3 {
-    font-size: 24px;
-}
-
-.servico p {
-    font-size: 16px;
-}
-
-#contato h2{
-    text-align: center;
-    padding: 1%;
 }
 
 #cta-orcamento{
@@ -287,13 +265,13 @@ footer {
     margin-top: -1%;
 }
 
-#header-orcamento{
+.header-orcamento{
     width: 100%;
     height: auto;
     float: left;
 }
 
-#header-orcamento h2{
+.header-orcamento h2{
     float: left;
     margin-left: 30%;
 }
@@ -405,123 +383,92 @@ footer {
     font-weight: bolder;
 }
 
-/* PÁGINA TESTES HUMANOS - VER O QUE DÁ PRA APROVEITAR PARA O CADASTRO*/
+#body-cadastro{
+    background-color: transparent;
+}
 
-#formulario-humanos {
-    background-color: #eaf0e4;
-    padding: 2%;
+#cadastroForm{
+    width: 60%;
+    float: left;
+    margin-left: 1%;
+    height: auto;
+    background-color: #ffffff;
+    margin-bottom: 2%;
+    margin-top: 0%;
     border: none;
-    border-radius: 5px;
-    margin-top: 20px;
-    text-align: left;
-    width: 50%; /* Ocupa 50% da largura da página */
-    margin: 0 auto; /* Centraliza o formulário na página */
-}
-
-#formulario-humanos label {
-    display: inline-block; /* Permite que os rótulos fiquem na mesma linha */
-    margin-top: 10px;
-    font-weight: bold;
-    text-align: left;
-    width: 45%; /* Define a largura dos rótulos */
-}
-
-#formulario-humanos input[type="text"],
-#formulario-humanos input[type="email"],
-#formulario-humanos select,
-#formulario-humanos textarea,
-#formulario-humanos input[type="number"],
-#formulario-humanos input[type="radio"],
-#formulario-humanos input[type="text"] {
-    width: 50%; /* Define a largura dos campos de entrada */
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    text-align: left;
-}
-
-#formulario-humanos label[for="outros-especificar"] {
-    display: inline-block;
-    text-align: left;
-    width: 45%; /* Define a largura do rótulo "Especificar" */
-}
-
-#formulario-humanos input[type="radio"] + label[for="outros"] {
-    display: inline-block;
-    text-align: left;
-    width: auto; /* Ajusta a largura dos rótulos dos radios */
-}
-
-#formulario-humanos input[type="radio"]:checked + label[for="outros"] + input[type="text"] {
-    display: inline-block;
-    margin-top: 5px;
-    text-align: left;
-    width: 45%; /* Define a largura do campo "Especificar" */
-}
-
-#formulario-humanos button {
-    width: 20%;
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
     text-align: center;
-    display: block; /* Faz o botão ocupar toda a largura disponível */
-    margin: 3% auto; /* Adiciona um espaço abaixo do botão */
-    border: 2px solid transparent;
 }
 
-#formulario-humanos button:hover {
-    background-color: #859e86;
-    color: #fff;
-    border: 2px solid #fff;
+#cadastroForm input[type="text"],
+#cadastroForm input[type="password"],
+#cadastroForm input[type="email"],
+#cadastroForm select{
+    width: 50%;
+    padding: 1%;
+    margin: 1%;
+    display: inline;
+    border: 2px solid #ebbe7c;
 }
 
-/* REMOVER DEPOIS */
-
-#error-page {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    margin: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.robot-image img {
-    max-width: 60%;
-    margin-top: 20%;
-    margin-bottom: 20%;
-}
-
-.error-message h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.error-message p {
+#cadastroForm label{
+    font-weight: bold;
     font-size: 16px;
+    color: #5a5757;
 }
 
-/* Estilos adicionais para o robô */
-.robot-image img {
-    border-radius: 10%;
+#botaoCadastrar {
+    float: right;
+    display: block;
+    margin-right: 30%;
+    background-color: #ebb34b;
+    color: rgb(70, 69, 69);
+    cursor: pointer;
+    font-size: 120%;
+    width: 30%;
+    margin-left: 8%;
+    padding: 2%;
 }
 
-/* Estilos adicionais para o erro */
-#error-page {
-    max-width: 600px;
-    margin: 0 auto;
+#botaoCadastrar:hover {
+    background-color: #db9005;
+    color: rgb(0, 0, 0);
 }
 
-/* Estilização do título h1 */
-.error-message h1 {
-    color: #ff6347; /* Cor de destaque */
+#side-img{
+    width: 35%;
+    float: right;
+    margin-top: -3%;
 }
 
+#side-img img{
+    width: 100%;
+}
+
+#repSenha{
+    float: left;
+    margin-left: 20%;
+}
+
+#repitaSenha{
+    float: left;
+}
+
+.error-message{
+    display: hidden;
+    display: block;
+    margin: -0.8%;
+}
+
+#repitaSenhaError{
+    margin-top: 1%;
+}
+
+#successMessage{
+    float: left;
+    color: #187918;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 1%;
+    margin-left: 45%;
+
+}

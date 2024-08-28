@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <title>Solicite um Orçamento - Rent A Tester</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <script src="scripts/cadastro.js"></script>
+    </head>
+<body id="body-cadastro">
+    <header class="header-orcamento">
+        <h1><a href="home.html"><img src="assets/img/rent.png" alt="logo do RentATester" id="logo-orcamento"></a></h1>
+        <h2>CADASTRE-SE!</h2>
+    </header>
+    <form id="cadastroForm">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Ex: Maria Silva">
+        <span class="error-message" id="nomeError"></span>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="Ex: maria.silva@mail.com">
+        <span class="error-message" id="emailError"></span>
+
+        <label for="estado">Estado:</label>
+        <select id="estado" name="estado">
+            <option value="">Selecione</option>
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+        </select><br>
+        <span class="error-message" id="estadoError"></span>
+
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" name="cidade" placeholder="Ex: Salvador">
+        <span class="error-message" id="cidadeError"></span>
+        
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" placeholder="Informe uma senha com no mínino 6 caracteres!">
+        <span class="error-message" id="senhaError"></span>
+        <span class="error-message" id="repitaSenhaError"></span>
+
+        <label for="repitaSenha" id="repSenha">Repita<br> a Senha:</label>
+        <input type="password" id="repitaSenha" name="repitaSenha" placeholder="Repita a sua senha">
+
+        <button type="submit" id="botaoCadastrar">Cadastrar</button>
+        <span class="success-message" id="successMessage"></span>
+    </form>
+    <div id="side-img">
+        <img src="assets/img/solo-wmn.png" alt="mulher sorrindo olhando o celular">
+    </div>
+
+</body>
+</html>
