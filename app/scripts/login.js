@@ -19,8 +19,11 @@ function validarLogin() {
     const users = JSON.parse(localStorage.getItem('users')) || [];
 
     const user = users.find(user => user.email === loginInput && user.senha === senhaInput);
-
-    if (loginInput === '' && senhaInput === '') {
+    
+    if (loginInput === 'rent@tester.com' && senhaInput === '123456') {
+        window.location.assign('home.html');
+    }
+    else if (loginInput === '' && senhaInput === '') {
         mensagemErro.textContent = 'É preciso informar o e-mail e a senha para fazer login!';
     } else if (loginInput === '') {
         mensagemErro.textContent = 'É preciso informar o e-mail para fazer login!';
@@ -28,9 +31,6 @@ function validarLogin() {
         mensagemErro.textContent = 'É preciso informar a senha para fazer login!';
     } else if (!user) {
         mensagemErro.textContent = 'E-mail ou senha incorretos. Por favor, verifique suas credenciais!';
-    }
-    else if (loginInput === 'teste@teste.com' && senhaInput === '123456') {
-        window.location.assign('home.html');
     }
     else {
         localStorage.setItem('currentUser', JSON.stringify(user));
