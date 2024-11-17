@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
             element.style.fontSize = '12px';
         }
 
-        if (!nome || nome.length < 10) {
+        if (!nome || nome.length < 3) {
             setError('nomeError', 'É necessário informar um nome válido!');
             isValid = false;
         }
@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             setTimeout(function() {
                 window.location.assign('index.html');
-            }, 3000);
+            }, 5000);
         } else {
             document.getElementById('successMessage').textContent = '';
         }
