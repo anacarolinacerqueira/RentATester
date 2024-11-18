@@ -27,6 +27,11 @@ document.addEventListener('DOMContentLoaded', function() {
             element.style.fontSize = '12px';
         }
 
+        if (!nome || nome.length < 3) {
+            setError('nomeError', 'É necessário informar um nome válido!');
+            isValid = false;
+        }
+
         if (!email || !emailRegex.test(email)) {
             setError('emailError', 'É necessário informar um e-mail válido!');
             isValid = false;
