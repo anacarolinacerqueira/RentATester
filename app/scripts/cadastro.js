@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const cidade = document.getElementById('cidade').value.trim();
         const senha = document.getElementById('senha').value;
         const repitaSenha = document.getElementById('repitaSenha').value;
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
         function setError(elementId, message) {
             const element = document.getElementById(elementId);
@@ -26,13 +27,8 @@ document.addEventListener('DOMContentLoaded', function() {
             element.style.fontSize = '12px';
         }
 
-        if (!nome || nome.length < 3) {
-            setError('nomeError', 'É necessário informar um nome válido!');
-            isValid = false;
-        }
-
-        if (!email) {
-            setError('emailError', 'É necessário informar o e-mail!');
+        if (!email || !emailRegex.test(email)) {
+            setError('emailError', 'É necessário informar um e-mail válido!');
             isValid = false;
         }
 
