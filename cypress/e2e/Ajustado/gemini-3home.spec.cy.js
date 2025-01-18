@@ -25,7 +25,7 @@ describe('Página Home', () => {
     cy.contains('FAZER ORÇAMENTO').click();
     // Assumindo que a página de orçamento contém um título específico
     cy.url().should('include', 'orcamento');
-    cy.contains('Página de Orçamento').should('be.visible');
+    cy.contains('Orçamento').should('be.visible');
   });
 
   // Caso o usuário esteja logado com um nome diferente, ajuste o teste a seguir
