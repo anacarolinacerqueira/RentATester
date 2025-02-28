@@ -1,0 +1,28 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: RentATester
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Ana Carolina Cerqueira Ferreira
+    email: cf.anacarolina@gmail.com
+    affiliation: Universidade Federal da Bahia
+repository-code: 'https://github.com/anacarolinacerqueira/RentATester/'
+url: 'https://rentatester.netlify.app/'
+abstract: >-
+  "Rent A Tester" is a web application developed to run
+  automated tests using Cypress. It is part of my final
+  course work (TCC), which evaluates the generation of
+  end-to-end automated tests by LLMs.
+keywords:
+  - Test Automation
+  - Test application
+  - web application for testing
+license: MIT
+commit: 06de7d9876b9724cd318f6665b84acd9ad80598a
+version: '1.0'
+date-released: '2025-02-18'
