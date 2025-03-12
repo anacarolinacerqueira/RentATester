@@ -14,9 +14,10 @@ authors:
 repository-code: 'https://github.com/anacarolinacerqueira/RentATester/'
 url: 'https://rentatester.netlify.app/'
 abstract: >-
-  "Rent A Tester" is a web application developed to run
-  automated tests using Cypress. It is part of my final
-  course work (TCC), which evaluates the generation of
+  "Rent A Tester" is a web application developed to be a
+  "System under Test" and run automated tests using Cypress.
+  It is part of my final course work (TCC) from Federal
+  University of Bahia, which evaluates the generation of
   end-to-end automated tests by LLMs.
 keywords:
   - Test Automation
